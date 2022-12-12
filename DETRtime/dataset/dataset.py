@@ -131,7 +131,7 @@ def create_annotations(y):
         """
         box = torch.Tensor([left / float(end), right / float(end)])
         bboxes.append(box)
-        labels.append(torch.tensor(label))  # if label == 0 else torch.tensor(1))
+        labels.append(label)  # if label == 0 else torch.tensor(1))
 
     if len(bboxes) > 0:
         # stack boxes in a tensor and convert boxes to [center, width]
