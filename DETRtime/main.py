@@ -110,7 +110,7 @@ def get_args_parser():
     parser.add_argument('--device', default='cuda',
                         help='device to use for training / testing')
     parser.add_argument('--seed', default=42, type=int)
-    parser.add_argument('--resume', default='', help='resume from checkpoint')
+    parser.add_argument('--resume', default='/itet-stor/klebed/net_scratch/Resume_dustin_supermodel_zuco_22-05-16-08-24/checkpoint_best_val.pth', help='resume from checkpoint')
     parser.add_argument('--start_epoch', default=0, type=int, metavar='N',
                         help='start epoch')
     parser.add_argument('--eval', action='store_true')
